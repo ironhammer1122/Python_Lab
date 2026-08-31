@@ -82,4 +82,5 @@ file11.write("102, Priya, 92\n")
 file11.write("103, Rahul, 78\n")
 content = file11.readlines()
 print(content)
+file11.close()
 
