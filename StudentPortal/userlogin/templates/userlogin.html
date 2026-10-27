@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+</head>
+<body>
+
+    <h2>Student Login Form</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>User ID:</label>
+        <input type="text" name="user_id" required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="user_pass" required>
+        <br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <h3>{{ result }}</h3>
+
+</body>
+</html>
